@@ -1,8 +1,26 @@
 def main():
-    add_two_numbers(1.5, 2.1)
-    subtract_two_numbers(3, 2)
-    divide_two_numbers(20, 5)
-    multiple_two_numbers(5, 5)
+    a = 0
+    b = 0
+
+    a, b = get_values()
+    add_two_numbers(a, b)
+
+    a, b = get_values()
+    subtract_two_numbers(a, b)
+
+    a, b = get_values()
+    divide_two_numbers(a, b)
+
+    a, b = get_values()
+    multiple_two_numbers(a, b)
+
+    
+def get_values():
+    a = 0
+    b = 0
+    a: float = float(input("Enter a: "))
+    b: float = float(input("Enter b: "))
+    return a, b
 
 
 def add_two_numbers(a, b):
